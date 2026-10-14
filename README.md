@@ -127,3 +127,8 @@ Keep the whole film folder under about 30 MB so the page stays fast.
 - Fonts: Red Hat Display, Text and Mono, served by Google Fonts (SIL Open Font License).
 - Site code: © 2769250 Alberta Ltd.
 - Team photos are used with each person's permission. Do not reuse them elsewhere.
+
+## After changing CSS or JavaScript
+
+Browsers keep old copies of `.css` and `.js` files for a while. Every page links them with a version number, like `main.css?v=2`.
+When you change any file in `assets/` or `content/`, raise the number in all the `.html` pages (find and replace `?v=2` with `?v=3`), so visitors get the new version straight away.
