@@ -254,3 +254,38 @@ footer{background:var(--night); color:var(--night-muted); border-top:1px solid v
 @media (max-height:940px){ .hero .lead{margin-top:20px} .hero .actions{margin-top:28px} .hero-foot{margin-top:32px} .hero h1{margin-top:18px} }
 @media (max-height:860px), (max-width:760px){ .hero-foot dl{display:none} .hero-foot{border-top:0; padding-top:0; margin-top:24px} }
 @media (max-width:760px){ .hero .lead{font-size:16px} .hero .actions .btn{padding:14px 18px} }
+
+/* ---------------- the access problem (scroll animation, home) ---------------- */
+.concept{background:var(--night); color:var(--night-ink); height:480svh; position:relative}
+.concept-pin{position:sticky; top:0; height:100svh; min-height:620px; display:flex; align-items:center; overflow:hidden; padding-top:72px}
+.concept-grid{display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr); gap:clamp(32px,5vw,80px); align-items:center; width:100%}
+.concept .eyebrow{color:var(--glow)}
+.concept h2{font-size:clamp(30px,3.6vw,50px); line-height:1.08; letter-spacing:-.025em; margin-top:18px; max-width:16ch}
+.concept .lead{color:var(--night-muted); font-size:clamp(16px,1.2vw,18px); margin-top:18px; max-width:44ch}
+.cstages{list-style:none; margin:32px 0 0; padding:0; border-top:1px solid var(--night-line)}
+.cstage{display:grid; grid-template-columns:44px minmax(0,1fr); gap:12px; padding-block:18px; border-bottom:1px solid var(--night-line); opacity:.34; transition:opacity .5s}
+.cstage.on{opacity:1}
+.cstage .n{font-family:var(--f-mono); font-size:12px; color:var(--glow); padding-top:5px}
+.cstage h3{font-size:19px; letter-spacing:-.01em}
+.cstage p{color:var(--night-muted); font-size:15px; margin-top:6px; line-height:1.55}
+.cstage.on:last-child h3{color:var(--glow)}
+.c-progress{margin-top:22px; height:2px; background:var(--night-line); border-radius:2px; overflow:hidden; max-width:320px}
+.c-progress i{display:block; height:100%; width:var(--p,0%); background:var(--glow)}
+.concept-stage{position:relative; height:min(78svh,760px); border:1px solid var(--night-line); border-radius:20px; background:radial-gradient(120% 90% at 50% 20%, #0C141F 0%, #060A11 70%); overflow:hidden}
+#concept{position:absolute; inset:0; width:100%; height:100%}
+.concept-tag{position:absolute; left:18px; top:16px; font-family:var(--f-mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--night-muted); background:rgba(6,10,17,.7); border:1px solid var(--night-line); padding:7px 11px; border-radius:999px}
+@media (max-width:860px){
+  .concept{height:420svh}
+  .concept-pin{align-items:flex-start; padding-top:calc(84px + env(safe-area-inset-top,0px))}
+  .concept-grid{grid-template-columns:minmax(0,1fr); gap:14px}
+  .concept h2{font-size:26px; margin-top:10px}
+  .concept .lead, .c-progress{display:none}
+  .cstages{margin-top:14px}
+  .cstage{display:none; padding-block:12px}
+  .cstage.on{display:grid}
+  .concept-stage{order:2; height:min(56svh,520px)}
+}
+@media (prefers-reduced-motion: reduce){
+  .concept{height:auto} .concept-pin{position:relative; height:auto; padding-block:96px}
+  .cstage{opacity:1; display:grid}
+}

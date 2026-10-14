@@ -54,6 +54,29 @@
     </div>
   </section>
 
+  <!-- THE ACCESS PROBLEM: scroll animation (assets/js/concept.js) -->
+  <section class="concept" id="s-concept" aria-labelledby="concept-h">
+    <div class="concept-pin">
+      <div class="wrap concept-grid">
+        <div class="concept-copy">
+          <div class="eyebrow">The access problem</div>
+          <h2 id="concept-h">Reaching the right place is the hard part.</h2>
+          <p class="lead">Many procedures are limited not by the surgeon, but by how instruments can get there.</p>
+          <ol class="cstages">
+            <li class="cstage on"><span class="n">01</span><div><h3>Rigid instruments</h3><p>Travel in a straight line. Tissue in the way is pushed aside or injured, which can lead to adhesions.</p></div></li>
+            <li class="cstage"><span class="n">02</span><div><h3>Flexible instruments</h3><p>Bend, but cannot hold a path. They depend on natural openings and lack stability for precise work.</p></div></li>
+            <li class="cstage"><span class="n">03</span><div><h3>Serpento</h3><p>Follows a curved path around tissue and reaches the target without disturbing the tissue around it.</p></div></li>
+          </ol>
+          <div class="c-progress" aria-hidden="true"><i id="cBar"></i></div>
+        </div>
+        <div class="concept-stage">
+          <canvas id="concept" role="img" aria-label="Animation: a straight instrument pushes through tissue, a flexible one buckles, and Serpento curves around the tissue to reach the target."></canvas>
+          <div class="concept-tag" id="conceptTag" aria-hidden="true">01 · Rigid instrument</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- LAB + COMPANY -->
   <section class="pad" style="padding-top:0" aria-labelledby="duo-h">
     <div class="wrap">
@@ -110,6 +133,7 @@
 <script src="content/site.js"></script>
 <script src="assets/film/film.js"></script>
 <script src="assets/js/home.js"></script>
+<script src="assets/js/concept.js"></script>
 <script src="assets/js/site.js"></script>
 </body>
 </html>
