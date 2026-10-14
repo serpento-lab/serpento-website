@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact · Serpento</title>
+<meta name="description" content="Get in touch with Serpento: clinicians, partners, investors and students.">
+<meta property="og:title" content="Contact · Serpento">
+<meta property="og:description" content="Get in touch with Serpento: clinicians, partners, investors and students.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://serpento.io/assets/img/og-image.jpg">
+<meta name="theme-color" content="#060A11">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700&family=Red+Hat+Mono:wght@400;500&family=Red+Hat+Text:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body data-page="contact">
+<!-- Menu: built from content/site.js -->
+<div id="site-nav"></div>
+
+<main id="top">
+  <!-- CONTACT -->
+  <section class="contact pad page-top fieldwrap" data-field data-dark-top id="s-contact">
+    <div class="wrap ct-grid">
+      <div>
+        <div class="eyebrow">Contact</div>
+        <h2 class="h2">Let’s build what comes next.</h2>
+        <p class="lead">We are always glad to hear from people who share the problem we are working on.</p>
+        <div class="aud">
+          <div><b>Clinicians</b><span>Tell us about a challenge you face in the operating room.</span></div>
+          <div><b>Partners &amp; investors</b><span>Manufacturing, medtech and funding partnerships.</span></div>
+          <div><b>Students</b><span>Graduate and summer research positions in the lab.</span></div>
+        </div>
+        <div class="mail"><code id="mail" data-site="email"></code><button type="button" id="copy">Copy</button></div>
+      </div>
+      <form id="form" novalidate>
+        <input type="hidden" name="_subject" value="Website enquiry">
+        <fieldset>
+          <legend>I am a</legend>
+          <div class="seg">
+            <input type="radio" name="who" id="w1" value="Clinician" checked><label for="w1">Clinician</label>
+            <input type="radio" name="who" id="w2" value="Partner or investor"><label for="w2">Partner or investor</label>
+            <input type="radio" name="who" id="w3" value="Student"><label for="w3">Student</label>
+          </div>
+        </fieldset>
+        <div class="field"><label for="f1">Full name</label><input id="f1" name="name" autocomplete="name" required></div>
+        <div class="field"><label for="f2">Email</label><input id="f2" name="email" type="email" autocomplete="email" required></div>
+        <div class="field"><label for="f3">How can we help?</label><textarea id="f3" name="msg" rows="4" required></textarea></div>
+        <div><button class="btn btn-light" type="submit">Send message <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button></div>
+        <p class="note" id="note" role="status"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<!-- Footer: built from content/site.js -->
+<div id="site-footer"></div>
+
+<script src="content/site.js"></script>
+<script src="assets/js/contact.js"></script>
+<script src="assets/js/field.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
