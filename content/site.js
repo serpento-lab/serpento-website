@@ -24,7 +24,7 @@ window.SITE = {
     To make it send real messages, create a free form at https://formspree.io
     and paste its endpoint here, for example: 'https://formspree.io/f/abcdwxyz'
   */
-  formEndpoint: '',
+  formEndpoint: 'https://formspree.io/f/moejpqej',
 
   // Menu. "page" must match data-page on the <body> of that page.
   // To add a page: copy an existing .html page, rename it, then add a line here.
